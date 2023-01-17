@@ -1,0 +1,20 @@
+.containerFooter {
+    display: flex; 
+    justify-content: center;
+    padding: 2% 7%;
+    background-color: black;
+}
+
+.footerBalance {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-kasaF{
+    display: flex;
+    justify-content: center;
+}
+
+.allRights {
+    color: white;
+}

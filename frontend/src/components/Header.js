@@ -5,9 +5,9 @@ import '../styles/Header.css'
 
 function Header() {
     return (
-        <header className='container'>
+        <header className='containerHeader'>
             <div className='logo-kasa'>
-                <img src={logo_kasa} alt='Kasa' className='logoStyle' />
+                <img src={logo_kasa} alt='Kasa' className='logoStyleH' />
             </div>
             <div className='navbar'>
                 <Navigation />

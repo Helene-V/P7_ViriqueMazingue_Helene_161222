@@ -3,3 +3,7 @@ nav a {
     color: #FF6060;
     text-decoration-line: none;
 }
+
+a:focus {
+    border-bottom: 2px solid;
+}
