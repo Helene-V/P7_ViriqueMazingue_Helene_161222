@@ -7,7 +7,7 @@ function Banner() {
         <section className='containerBanner'>
             <img src={home_banner} alt='ImageNature' className='bannerImg'  />
             <div className='bannerFilter'></div>
-            <h1 className='bannerTxt'>Chez vous, partout ailleurs</h1>
+            <h1 className='bannerTxt'>Chez vous, partout et ailleurs</h1>
         </section>
     )
 }
