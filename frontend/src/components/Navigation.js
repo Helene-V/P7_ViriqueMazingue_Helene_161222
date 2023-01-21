@@ -1,12 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../styles/Navigation.css'
 
 function Navigation() {
+
+    const navStyle = ({ isActive }) => {
+        return {
+            borderBottom: isActive && "3px solid #FF6060"
+        }
+    }
+
     return (
         <nav>
-                <Link to="/">Accueil</Link>
-                <Link to="/a-propos">A propos</Link>
+                <NavLink style={navStyle} to="/accueil">Accueil</NavLink>
+                <NavLink style={navStyle} to="/a-propos">A propos</NavLink>
         </nav>
     )
 }
