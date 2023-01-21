@@ -11,6 +11,6 @@ function Card() {
 
 export default Card
 
-//Placer le titre en bas à gauche CSS et contenu Json
+// Placer le titre en bas à gauche CSS et contenu Json
 // Ajouter le contenu dans les card (6 visibles sur Figma)
 // Guidelines : pas de warning dans la console
