@@ -1,97 +1,41 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-//import axios from 'axios';
-//import data from '../data/data.json'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 function Router() {
-  const [data, setData] = useState([]);
+    const [data, setData] = useState([])
+    const [dataId, setDataId] = useState([])
 
-  useEffect(() => {
-    axios.get("/data.json")
-      .then((res) => {
-          setData(res.data);
-        },
-      )
-  }, [])
+    useEffect(() => {
+        axios.get('/data.json').then((res) => {
+            setData(res.data)
+            setDataId(
+              res.data.filter((dataId) => dataId.id === 'accomodation_id')
+            )
+        })
+    }, [])
 
     return (
-      <div>
-      <ul>
-        {data.map(data => (
-          <li key={data.id}>
-            {data.title}
-          </li>
-        ))}
-      </ul>
-      </div>
-    );
-  }
+        <div>
+            <ul>
+                {data.map((data) => (
+                    <li key={data.id}>{data.title}</li>
+                ))}
+            </ul>
+            <div>
+            <ul>
+                {dataId.map((dataId) => (
+                    <li key={dataId.id}>{dataId.title}</li>
+                ))}
+            </ul>
+        </div>
+        </div>
+
+    )
+}
 
 export default Router
 
-
 // https://reactjs.org/docs/faq-ajax.html
-
-/*
-const data = () => {
-    axios
-        .get('http://localhost:3000/accueil/')
-        .then((res) => {
-            console.log(res)
-            setData(res.data)
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-    }
-    useEffect(() => {
-        data()
-    }, []);
-
-    return (
-        <article>
-        </article>
-    ) */
-
-
-
-//.get('http://localhost:3000/accueil/{$`id`})
-
-/*        <article>
-            {this.sate.data.map( data => 
-                <li key={data.id}>{data.title}</li>
-                )}
-        </article> */
-
-/*
-export default axios.create({
-    baseURL: `http://localhost:3000/accueil/`
-});
-*/
-
-/*
-
-export default function Router() {
-
-const [data, setData] = useState([]);
-
-    useEffect(() => {
-        axios
-            .get('../data.json')
-            .then((res) => {
-                console.log(res)
-                setData(res.data)
-            })
-            .catch((err) => {
-            console.log(err)
-            })     
-        }, []);
-
-    return (
-        <li>{data.map}
-        </li>
-    );
-} */
 
 /*
 function Router() {
@@ -131,3 +75,56 @@ function Router() {
 
 export default Router
 */
+
+/*
+function nouveauComponent({data, dataId}) {
+  return (
+    <div>
+      <ul>
+        {data.map(data => (
+          <li key={data.id}>
+            {data.title}
+          </li>
+        ))}
+      </ul>
+      <ul>
+        {dataId.map(data => (
+          <li key={dataId}>
+            {data.title}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+*/
+
+/*
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
+function Router() {
+  const [data, setData] = useState([]);
+  const [dataId, setDataId] = useState([]);
+
+  useEffect(() => {
+    axios.get("/data.json")
+      .then((res) => {
+          setData(res.data);
+          setDataId(res.data.filter(dataId => dataId.id === 'accomodation_id'))
+        },
+      )
+  }, [])
+
+
+    return (
+      <div>
+        <Router data={data} dataId={dataId} />
+      </div>
+    );
+  }
+
+
+export default Router
+ */

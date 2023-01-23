@@ -1,9 +1,10 @@
 import React from 'react';
-import Router from './Router'
+import Router from './Router';
+
 import '../styles/Card.css';
 
 
-function Card() {
+function Card(data) {
 
     return (
         <article>
@@ -64,3 +65,27 @@ render() {
 }}
 
 export default Card */
+
+/*
+function Card({data}) {
+
+
+    return (
+        <article>
+            <Router key={data.map(data => 
+                <li key={data.id}>{data.title}</li>
+                )}/>
+        </article>
+    )
+}
+*/
+
+/*
+    return (
+        <article>
+            <NavLink to={`/accomodation/${this.data.id}`}>
+            <h2>{this.data.title}</h2>
+            </NavLink>
+        </article>
+    )
+*/
