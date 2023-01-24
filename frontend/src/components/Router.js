@@ -1,3 +1,32 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
+const Router = () => {
+      useEffect(() => {axios.get('/data.json').then((res) => {
+            setData(res.data)
+        })
+    }, [])
+
+const [data, setData] = useState([]);
+
+
+
+    return (
+  
+                <div>
+            <ul>
+                {data.map((data) => (
+                    <li key={data.id}>{data.title}</li>
+                ))}
+            </ul>
+            </div>
+
+    )
+}
+
+export default Router
+
+/* Dernier test qui fonctionne pour récupérer la data, pas de récupération de dataId possible avec ce code
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -34,6 +63,7 @@ function Router() {
 }
 
 export default Router
+*/
 
 // https://reactjs.org/docs/faq-ajax.html
 
