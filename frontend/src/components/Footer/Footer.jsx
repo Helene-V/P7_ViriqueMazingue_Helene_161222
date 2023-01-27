@@ -1,6 +1,6 @@
 import React from "react";
-import logo_kasa_w from '../assets/logo_kasa_w.png'
-import '../styles/Footer.css'
+import logo_kasa_w from '../../assets/logo_kasa_w.png'
+import '../Footer/Footer.css'
 
 function Footer() {
     return (

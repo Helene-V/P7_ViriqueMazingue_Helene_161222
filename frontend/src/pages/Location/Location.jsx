@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AccomodationSheet() {
+function Location() {
     return (
         <div>
             <h1>Fiche logement</h1>
@@ -8,4 +8,4 @@ function AccomodationSheet() {
     )
 }
 
-export default AccomodationSheet
+export default Location

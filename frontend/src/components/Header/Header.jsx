@@ -1,7 +1,7 @@
 import React from 'react';
-import Navigation from './Navigation';
-import logo_kasa from '../assets/logo_kasa.png'
-import '../styles/Header.css'
+import Navigation from '../Navigation/Navigation';
+import logo_kasa from '../../assets/logo_kasa.png'
+import '../Header/Header.css'
 
 function Header() {
     return (

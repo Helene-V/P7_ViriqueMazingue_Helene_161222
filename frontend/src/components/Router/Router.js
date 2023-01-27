@@ -2,26 +2,22 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Router = () => {
-      useEffect(() => {axios.get('/data.json').then((res) => {
-            setData(res.data)
-        })
-    }, [])
+  useEffect(() => {axios.get('/data.json').then((res) => {
+    setData(res.data)
+    })
+  }, [])
 
 const [data, setData] = useState([]);
 
-
-
-    return (
-  
-                <div>
-            <ul>
-                {data.map((data) => (
-                    <li key={data.id}>{data.title}</li>
-                ))}
-            </ul>
-            </div>
-
-    )
+  return (
+    <div>
+      <ul>
+        {data.map((data) => (
+          <li key={data.id}>{data.title}</li>
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 export default Router

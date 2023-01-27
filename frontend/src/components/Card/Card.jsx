@@ -1,7 +1,7 @@
 import React from 'react';
-import Router from './Router';
+import Router from '../Router/Router';
 
-import '../styles/Card.css';
+import '../Card/Card.css';
 
 
 function Card(data) {
