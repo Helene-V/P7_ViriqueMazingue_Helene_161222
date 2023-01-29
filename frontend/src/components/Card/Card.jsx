@@ -1,5 +1,4 @@
 import React from 'react';
-import DataLocation from '../../DataLocation';
 
 import '../Card/Card.css';
 
@@ -8,7 +7,6 @@ function Card() {
 
     return (
         <article>
-            <DataLocation />
         </article>
     )
 }
