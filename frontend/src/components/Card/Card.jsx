@@ -1,14 +1,14 @@
 import React from 'react';
-import Router from '../Router/Router';
+import DataLocation from '../../DataLocation';
 
 import '../Card/Card.css';
 
 
-function Card(data) {
+function Card() {
 
     return (
         <article>
-            <Router />
+            <DataLocation />
         </article>
     )
 }
