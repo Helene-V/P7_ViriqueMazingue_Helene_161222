@@ -1,15 +1,25 @@
-import React, { useState,useEffect } from 'react';
-import dataLocation from '../../data/dataLocation';
-//import axios from 'axios';
+import React, { useEffect } from 'react';
+//import dataLocation from '../../data/dataLocation';
+import Data from '../../data/data.json';
+import axios from 'axios';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 
-function Home() {
-    const [data, setData] = useState([]);
+const Home = () => {
 
     useEffect(() => {
-        setData(dataLocation.getData());
+        axios
+        .get('/data.json')
+        .then((res) => {
+            console.log(res)
+            Data(res.data)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
     }, [])
+
+    //const [data, setData] = useState([]);
 
     return ( 
         <div>       
@@ -18,7 +28,7 @@ function Home() {
                 <Card />
                 <div>
                     <ul>
-                        {data.map(data => (
+                        {Data.map(data => (
                             <li key={data.id}>{data.title}</li>
                         ))}
                     </ul>
@@ -30,6 +40,9 @@ function Home() {
 }
 
 export default Home
+
+// https://axios-http.com/fr/docs/example
+// https://github.com/axios/axios#example
 
 /*
 function Home() {
