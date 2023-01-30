@@ -1,3 +1,49 @@
+import React, { useState, useEffect } from 'react';
+import Banner from '../../components/Banner/Banner';
+import Card from '../../components/Card/Card';
+import { getLocations } from '../../data/DataLocation'
+
+const Home = () => {
+
+    const [locations, setLocations] = useState([]);
+
+    useEffect(() => {
+        async function getLocationsLoad() {
+            const locations = await getLocations();
+            setLocations(locations);
+        }
+        getLocationsLoad();
+    }, []);
+
+    return ( 
+        <div>       
+            <Banner />
+            <main className='containerCard'>
+                <div>
+                    {locations.map(locations => (
+                        <Card key={locations.id} title={locations.title} />
+                    ))}
+                </div>
+            </main>
+        </div>
+
+    )
+}
+
+export default Home
+
+// https://axios-http.com/fr/docs/example
+// https://github.com/axios/axios#example
+
+/*
+useEffect(() => {
+        getLocations().then((response) => {
+            setLocations(response.data);
+        });
+    }, []);
+     */
+
+/*
 import React, { useEffect } from 'react';
 //import dataLocation from '../../data/dataLocation';
 import Data from '../../data/data.json';
@@ -40,9 +86,9 @@ const Home = () => {
 }
 
 export default Home
+*/
 
-// https://axios-http.com/fr/docs/example
-// https://github.com/axios/axios#example
+
 
 /*
 function Home() {
