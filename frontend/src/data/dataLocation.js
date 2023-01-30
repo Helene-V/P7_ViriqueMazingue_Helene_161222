@@ -1,6 +1,16 @@
 import axios from 'axios';
-//import data from '../../data/data.json';
-const API_URL = 'data.json';
+import data from '../data/data.json';
+
+axios.get('/data.json')
+        .then((res) => {
+            console.log(res)
+            data(res.data)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+
+const API_URL = 'http://localhost:3000/';
 
 export async function getLocations() { 
   try {
@@ -19,6 +29,11 @@ export async function getLocationsById(id) {
     console.log(err)
   }
 }
+
+// https://www.digitalocean.com/community/tutorials/react-axios-react-fr
+// https://axios-http.com/fr/docs/example
+// https://github.com/axios/axios#example
+
 
 /*
 const data = require('../data/data.json');
