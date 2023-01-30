@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
-import { getLocations } from '../../data/DataLocation'
+import { getLocations } from '../../data/DataLocation';
 
 const Home = () => {
 
@@ -20,7 +20,7 @@ const Home = () => {
             <Banner />
             <main className='containerCard'>
                 <div>
-                    {locations.map(locations => (
+                    {locations.map((locations) => (
                         <Card key={locations.id} title={locations.title} />
                     ))}
                 </div>
@@ -32,8 +32,6 @@ const Home = () => {
 
 export default Home
 
-// https://axios-http.com/fr/docs/example
-// https://github.com/axios/axios#example
 
 /*
 useEffect(() => {
