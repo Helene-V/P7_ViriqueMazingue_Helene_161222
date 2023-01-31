@@ -1,8 +1,16 @@
 import axios from 'axios';
 import data from '../data/data.json';
 
+
+// Récupére la data depuis le fichier json
+axios.get('/data.json').then(res => {
+  return data
+});
+
+// BaseURL
 const API_URL = 'http://localhost:3000/';
 
+// Récupére tous les logements
 export async function getLocations() { 
   try {
     const { data } = await axios.get(`${API_URL}locations`);
@@ -12,6 +20,7 @@ export async function getLocations() {
   }
 }
 
+// Récupére un logement selon l'id
 export async function getLocationsById(id) { 
   try {
     const { data } = await axios.get(`${API_URL}locations/${id}`);
@@ -25,6 +34,35 @@ export async function getLocationsById(id) {
 // https://axios-http.com/fr/docs/example
 // https://github.com/axios/axios#example
 
+
+/*
+
+const getData = () => { 
+  return axios
+    .get("/data/data.json")
+    .then((res) => (res.data))
+    .catch((err) => console.log(err));
+}
+
+
+export default axios.create({
+  baseURL: "http://localhost:3000/data",
+  headers: {
+    "Content-type": "application/json"
+  }
+});
+
+//axios.get("../data/data.json");
+
+axios.get('../data/data.json')
+  .then(function (res) {
+    return data
+  })
+  .catch(function (error) {
+
+    console.log(error);
+  })
+*/
 
 /*
 const API_URL = 'http://localhost:3000/';
