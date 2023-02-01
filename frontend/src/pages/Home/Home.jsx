@@ -1,28 +1,32 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
-import { getLocations } from '../../data/DataLocation';
+import { dataLocations } from '../../data/dataLocations';
 
-const Home = () => {
+function Home() {
 
-    const [locations, setLocations] = useState([]);
+    const [Locations, setLocations] = useState([]);
 
-    useEffect(() => {
-        async function getLocationsLoad() {
-            const locations = await getLocations();
-            setLocations(locations);
-        }
-        getLocationsLoad();
-    }, []);
+useEffect(() => {
+    
+    setLocations(dataLocations.getLocations());
+    
+  }, [])
 
     return ( 
         <div>       
             <Banner />
             <main className='containerCard'>
-                <div>
-                    {locations.map((locations) => (
-                        <Card key={locations.id} title={locations.title} />
-                    ))}
+                <div>{Locations.map((location) => {
+                    return (
+                        <article key={location.id}>
+                            <Link to={`/location/${location.id}`}>
+                                <Card title={location.title} />
+                            </Link>
+                        </article>
+                    )
+                })}
                 </div>
             </main>
         </div>
@@ -32,6 +36,16 @@ const Home = () => {
 
 export default Home
 
+
+//https://reactrouter.com/en/main/components/link
+
+
+/*
+    useEffect(() => {
+        dataLocations.getLocations().then((res) => {
+            setLocations(res.Locations);
+        });
+    }, []); */
 
 /*
 useEffect(() => {

@@ -1,3 +1,25 @@
+import Locations from './data.json';
+
+// Test récupération toute la data
+const getLocations = () => {
+  return Locations
+}
+
+// Test récupération data par id
+const getLocationsById = (id) => {
+  return Locations.find(location => location.id === id);
+}
+
+// Retourne deux objets
+export const dataLocations =
+  { getLocations, getLocationsById }
+
+// https://www.digitalocean.com/community/tutorials/react-axios-react-fr
+// https://axios-http.com/fr/docs/example
+// https://github.com/axios/axios#example
+
+
+/*
 import axios from 'axios';
 import data from '../data/data.json';
 
@@ -29,11 +51,7 @@ export async function getLocationsById(id) {
     console.log(err)
   }
 }
-
-// https://www.digitalocean.com/community/tutorials/react-axios-react-fr
-// https://axios-http.com/fr/docs/example
-// https://github.com/axios/axios#example
-
+*/
 
 /*
 
@@ -86,23 +104,3 @@ export async function getLocationsById(id) {
 }
 
 */
-
-/*
-const data = require('../data/data.json');
-
-const API_URL = '/data.json';
-
-// Test récupération toute la data
-const getData = () => {
-  return data
-};
-
-// Test récupération data par id
-const findById = id => {
-  return data.find(location => location.id === id);
-}
-
-// Retourne deux objets
-export default function dataLocation() {
-  return { getData, findById }
-}; */

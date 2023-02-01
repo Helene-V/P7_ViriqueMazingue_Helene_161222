@@ -2,15 +2,35 @@ import React from 'react';
 import '../Card/Card.css';
 
 
+
 function Card() {
 
+    const { id, cover, title } = Location
+
     return (
-        <article>
+        <article>{id}
+            <img src={cover} alt='' />
+            <h2>{title}</h2>
         </article>
     )
 }
 
 export default Card
+
+/*
+const Card = ({ cover, title}) => {
+
+    return (
+        <div>
+            <img src={image} alt="logement" />
+            <h2>{title}</h2>
+        </div>
+    )
+}
+
+export default Card;
+*/
+
 
 // Placer le titre en bas à gauche CSS et contenu Json
 // Ajouter le contenu dans les card (6 visibles sur Figma)
