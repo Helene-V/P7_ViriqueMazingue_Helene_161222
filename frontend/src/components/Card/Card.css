@@ -9,10 +9,11 @@ main{
     background-color: #F6F6F6;
 }
 
-article {
+.imageCard {
+    border-radius: 10px;
+    object-fit: cover;
     width: 340px;
     height: 340px;
     margin: 1%;
     border-radius: 25px;
-    background-color: rebeccapurple;
 }
