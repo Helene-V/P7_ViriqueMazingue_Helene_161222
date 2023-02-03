@@ -1,0 +1,42 @@
+.collapseContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.collapseRoll {
+    display: flex;
+    align-items: center;
+    width: 1023px;
+    height: 47px;
+    padding-right: 30px;
+    border-radius: 5px;
+    background-color: #FF6060;
+}
+
+.collapseTitle {
+    display: flex;
+    align-items: center;
+    width: 1023px;
+    height: 47px;
+    padding-left: 16px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    color: #FFFFFF;
+
+    font-size: 24px;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.collapseDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.test {
+    display: flex;
+}

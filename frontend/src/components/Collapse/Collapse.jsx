@@ -8,18 +8,20 @@ function Collapse(data) {
     const description = data.description
 
     return(
-        <div>
-            <div>
-                <h2>{title}</h2>
+        <div className='collapseContainer'>
+            <div className='collapseRoll'>
+                <h1 className='collapseTitle'>{title}</h1>
                 <span onClick={() => setOpenCollapse(!openCollapse)}>
                     <img src={about_arrow} alt="onglet déroulant" />
                 </span>
             </div>
             {
-                openCollapse && <div>{description}</div>
+                openCollapse && <div className='collapseDescription'>{description}</div>
             }
         </div>
     )
 }
 
 export default Collapse;
+
+// Penser au rotate pour le collapse 
