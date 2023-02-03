@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    justify-content: center;
+    height: 829px;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 25px;
+    background-color: #F7F7F7;
+}
+
+.containerHome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

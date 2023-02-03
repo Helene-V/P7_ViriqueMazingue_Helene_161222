@@ -7,9 +7,10 @@ function Card(Locations) {
     const cover = Locations.cover
 
     return (
-        <article >
-            <img className="imageCard" src={cover} alt='' />
-            <h2>{title}</h2>
+        <article className='cardContainer' >
+                <img className='cardImg' src={cover} alt='' />
+                <div className='cardFilter'></div>
+                <h2 className='cardTxt'>{title}</h2>
         </article>
     )
 }

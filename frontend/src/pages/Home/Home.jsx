@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import { dataLocations } from '../../data/dataLocations';
+import '../Home/Home.css';
 
 function Home() {
 
@@ -17,8 +18,8 @@ useEffect(() => {
     return ( 
         <div>       
             <Banner />
-            <main className='containerCard'>
-                <div>{Locations.map((location) => {
+            <main>
+                <div className='containerHome'>{Locations.map((location) => {
                     return (             
                         <Link key={location.id} to={`/location/${location.id}`}>
                             <Card key={location.id} cover={location.cover} title={location.title} />
