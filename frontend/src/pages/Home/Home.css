@@ -1,7 +1,7 @@
 main {
     display: flex;
     justify-content: center;
-    height: 829px;
+    height: auto;
     margin-top: 2%;
     padding: 2%;
     border-radius: 25px;

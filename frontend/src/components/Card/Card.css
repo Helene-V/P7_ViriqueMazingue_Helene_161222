@@ -25,6 +25,7 @@
 .cardTxt {
     position: absolute;
     width: 300px;
+    height: 35px;
     line-height: 142.6%;
     font-size: 18px;
     color: #fff;
