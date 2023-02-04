@@ -30,4 +30,4 @@ function Collapse(data) {
 
 export default Collapse;
 
-// Penser au rotate pour le collapse 
+//image de la bannière à changer
