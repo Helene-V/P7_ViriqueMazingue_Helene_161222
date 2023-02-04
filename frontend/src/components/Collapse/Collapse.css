@@ -1,6 +1,7 @@
 .collapseContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 30px;
 }
 
@@ -35,6 +36,14 @@ span {
 .collapseDescription {
     display: flex;
     flex-direction: column;
+    width: 1023px;
+    height: auto;
+    font-size: 24px;
+    padding: 25px 20px 15px 12px;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+;
 }
 
 .test {
