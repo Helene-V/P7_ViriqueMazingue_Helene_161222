@@ -14,6 +14,13 @@ const getLocationsById = (id) => {
 export const dataLocations =
   { getLocations, getLocationsById }
 
+// Retourne les images
+//const Images = {
+//  home_banner: require('../assets/home_banner.jpg').default,
+//  about_banner: require('../assets/about_banner.jpg').default,
+//}
+//export default Images
+
 // https://www.digitalocean.com/community/tutorials/react-axios-react-fr
 // https://axios-http.com/fr/docs/example
 // https://github.com/axios/axios#example
