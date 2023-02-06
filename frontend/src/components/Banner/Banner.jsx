@@ -1,15 +1,23 @@
 import React from 'react';
-import home_banner from '../../assets/home_banner.jpg'
+//import home_banner from '../../assets/home_banner.jpg'
 import '../Banner/Banner.css'
 
-function Banner() {
+function Banner({assets}) {
+
+
     return (
         <section className='containerBanner'>
-            <img src={home_banner} alt='ImageNature' className='bannerImg'  />
+            <img className='bannerImg' src={assets} alt='Paysage' />
             <div className='bannerFilter'></div>
-            <h1 className='bannerTxt'>Chez vous, partout et ailleurs</h1>
         </section>
-    )
+    );
 }
 
-export default Banner
+export default Banner;
+
+
+// src='/banner.jpg'
+// src={`/assets${index}.jpg`} chemin dynamique
+//assets={require(`../assets/home_banner/${home_banner}.jpg`)}
+
+//https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7136837-partagez-votre-state-entre-differents-composants
