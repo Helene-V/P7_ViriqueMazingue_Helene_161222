@@ -28,6 +28,10 @@
     font-size: 24px;
 }
 
+span:hover {
+    cursor: pointer;
+}
+
 span {
     display: flex;
     justify-content: flex-end;
