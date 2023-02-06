@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import { dataLocations } from '../../data/dataLocations';
-import home_banner from '../../assets/home_banner.jpg';
 import '../Home/Home.css';
 
 function Home() {
@@ -18,7 +17,7 @@ useEffect(() => {
 
     return ( 
         <div>       
-            <Banner src={home_banner} text='Chez vous, partout et ailleurs' />
+            <Banner src={require('../../assets/home_banner.jpg')} text='Chez vous, partout et ailleurs' />
             <main>
                 <div className='containerHome'>{Locations.map((location) => {
                     return (             

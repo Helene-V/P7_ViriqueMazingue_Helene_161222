@@ -1,13 +1,11 @@
 import React from 'react';
-import '../Banner/Banner.css'
-import home_banner from '../../assets/home_banner.jpg';
-
+import '../Banner/Banner.css';
 
 function Banner() {
-
-    return (
+    
+return (
         <section className='containerBanner'>
-            <img className='bannerImg'src={home_banner} alt=''/>
+            <img className='bannerImg' src={require('../../assets/home_banner.jpg') } alt=''/>
             <div className='bannerFilter'></div>
         </section>
     );
