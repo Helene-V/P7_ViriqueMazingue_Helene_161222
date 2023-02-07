@@ -1,14 +1,20 @@
-import React from 'react';
-//const Slideshow = ({location}) => {
- //   return <div>Image slider</div>
-//}
+import React, { useState } from 'react';
+
 function Slideshow(location) {
-    const images = location.images 
+    const image = location.image
+    const [imageIndex, setImageIndex] = useState(0);
+
+function handleNext() {
+    setImageIndex((prevIndex) => {
+        return prevIndex + 1 < image.length ? prevIndex + 1 : 0;
+    })
+}
 
     return (
         <div>
-            <img src={images} alt='hello' />
+            <img src={image[imageIndex]} alt='hello' />
             <div>Hello</div>
+            <button onClick={handleNext}>slide</button>
         </div>
     )
 }

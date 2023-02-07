@@ -14,7 +14,7 @@ function Location() {
     return ( 
         <div>       
             <main>
-                <Slideshow images={location.pictures} />
+                <Slideshow image={location.pictures} />
             </main>
         </div>
 
