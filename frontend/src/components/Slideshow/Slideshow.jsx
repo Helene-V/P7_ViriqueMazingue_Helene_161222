@@ -9,12 +9,22 @@ function handleNext() {
         return prevIndex + 1 < image.length ? prevIndex + 1 : 0;
     })
 }
+function handlePrevious() {
+    setImageIndex((prevIndex) => {
+        return prevIndex > 0 ? prevIndex - 1 : image.length -1;
+    })
+}
 
     return (
         <div>
             <img src={image[imageIndex]} alt='hello' />
             <div>Hello</div>
-            <button onClick={handleNext}>slide</button>
+            {image.length > 1 ? (
+                <>
+                    <button onClick={handleNext}>Next</button>
+                    <button onClick={handlePrevious}>Previous</button>
+                </>
+            ) : null}
         </div>
     )
 }
