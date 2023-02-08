@@ -1,12 +1,15 @@
 import React from 'react';
 import '../Banner/Banner.css';
 
-function Banner() {
+function Banner(home) {
+    const text = home.text
     
+
 return (
         <section className='containerBanner'>
             <img className='bannerImg' src={require('../../assets/home_banner.jpg') } alt=''/>
             <div className='bannerFilter'></div>
+            <h1 className='bannerTxt'>{text}</h1>
         </section>
     );
 }
