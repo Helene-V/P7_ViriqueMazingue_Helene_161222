@@ -1,13 +1,14 @@
 import React from 'react';
 import '../Banner/Banner.css';
 
-function Banner(home) {
-    const text = home.text
+function Banner(banner) {
+    const text = banner.text
+    const src = banner.src
     
 
 return (
         <section className='containerBanner'>
-            <img className='bannerImg' src={require('../../assets/home_banner.jpg') } alt=''/>
+            <img className='bannerImg' src={src} alt=''/>
             <div className='bannerFilter'></div>
             <h1 className='bannerTxt'>{text}</h1>
         </section>
