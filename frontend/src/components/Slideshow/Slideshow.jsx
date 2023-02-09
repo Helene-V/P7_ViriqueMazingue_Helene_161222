@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import '../Slideshow/Slideshow.css';
+
 
 function Slideshow(location) {
     const image = location.image
@@ -9,6 +11,7 @@ function handleNext() {
         return prevIndex + 1 < image.length ? prevIndex + 1 : 0;
     })
 }
+
 function handlePrevious() {
     setImageIndex((prevIndex) => {
         return prevIndex > 0 ? prevIndex - 1 : image.length -1;
@@ -16,13 +19,18 @@ function handlePrevious() {
 }
 
     return (
-        <div>
-            <img src={image[imageIndex]} alt='hello' />
-            <div>Hello</div>
+        <div className='slideshowContainer'>
+            <img className='slideshowImage' src={image[imageIndex]} alt='slide' />
             {image.length > 1 ? (
                 <>
-                    <button onClick={handleNext}>Next</button>
-                    <button onClick={handlePrevious}>Previous</button>
+                <div className='slideshowArrow'>
+                    <div className='slideshowArrowNext'>
+                    <img src={require('../../assets/location_arrow_left.png')} onClick={handleNext} alt='next' />
+                    </div>
+                    <div className='slideshowArrowPrev'>
+                    <img src={require('../../assets/location_arrow_right.png')}onClick={handlePrevious} alt='previous'/>
+                    </div>
+                </div>
                 </>
             ) : null}
         </div>
@@ -30,39 +38,5 @@ function handlePrevious() {
 }
 
 export default Slideshow;
-//export default Slideshow
 
-/*import React, { useState } from 'react';
-import '../Slideshow/Slideshow.css';
-
-function Slideshow(Locations) {
-    const pictures = Locations.pictures
-    
-    const [index, setIndex] = useState(0);
-    const length = 3;
-
-    const handlePrevious = () => {
-        const newIndex = index - 1;
-        setIndex(newIndex < 0 ? length - 1 : newIndex);
-    };
-
-    const handleNext = () => {
-        const newIndex = index + 1;
-        setIndex(newIndex >= length ? 0 : newIndex);
-    };
-
-
-    return (
-        <div className="Slideshow">
-            <div onClick={handlePrevious}>Previous</div>
-            <div onClick={handleNext}>Next</div>
-            <div>           
-                {Slideshow.map((pictures,index) => (
-                    <div key={index}>
-                ))}
-                    </div>
-            </div>
-        </div>
-    )
-}
-export default Slideshow;*/
+// afficher l'index nb photos

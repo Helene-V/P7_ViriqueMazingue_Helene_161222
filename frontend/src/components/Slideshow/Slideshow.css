@@ -1,0 +1,21 @@
+.slideshowImage {
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.slideshowArrowNext,
+.slideshowArrowPrev {
+    position: inherit;
+    transform: translateY(-300%);
+    width: 46.68px;
+    height: auto;
+    cursor: pointer;
+}
+
+.slideshowArrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
