@@ -31,6 +31,7 @@ function handlePrevious() {
                     <img src={require('../../assets/location_arrow_right.png')}onClick={handlePrevious} alt='previous'/>
                     </div>
                 </div>
+                    <p className='indexPictures'>{imageIndex + 1}/{image.length}</p>
                 </>
             ) : null}
         </div>
@@ -38,5 +39,3 @@ function handlePrevious() {
 }
 
 export default Slideshow;
-
-// afficher l'index nb photos
