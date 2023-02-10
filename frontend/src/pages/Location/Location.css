@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSlides {
+    display: flex;
+    justify-content: space-around;
+}
+
+.locationTitle {
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    color:#FF6060;
+}
+
+.infoLocation {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color:#FF6060;
+}
