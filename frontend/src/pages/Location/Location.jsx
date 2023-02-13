@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Tag from '../../components/Tag/Tag';
+import Rating from '../../components/Rating/Rating';
 import { dataLocations } from '../../data/dataLocations';
 import '../Location/Location.css';
 
@@ -29,6 +30,7 @@ function Location() {
             <div className='containerHost'>
                 <p className='hostName'>{location.host.name}</p>
                 <img src={location.host.picture} alt=''/>
+                <Rating />
             </div>        
         </main>
     )
