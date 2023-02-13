@@ -17,11 +17,13 @@ function Location() {
                 <div className='containerSlides'>
                     <Slideshow image={location.pictures} />
                 </div>
-                <div className='infoLocation'>
+                <div className='locationInfo'>
                 <h1 className='locationTitle'>{location.title}</h1>
                 <p>{location.location}</p>
-                <div>
-                   {location.tags}
+                <div className='locationTags'>
+                   {location.tags.map(tag => (
+                    <div key='location' className='tag'>{tag}</div>
+                   ))}
                 </div>
                 </div>            
             </main>
