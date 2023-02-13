@@ -34,8 +34,13 @@ function Location() {
                 <Rating ratingValue={location.rating} />
             </div>
             <div>
-                <Collapse />
-                <Collapse />
+                <Collapse title="Description" description={location.description} />
+                <Collapse title="Équipements" description={
+                    <ul>{location.equipments.map(equipments => (
+                        <li key={equipments}>{equipments}</li>
+                        ))}
+                    </ul>}
+                />
             </div>    
         </main>
     )
