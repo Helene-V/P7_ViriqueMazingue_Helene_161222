@@ -13,20 +13,24 @@ function Location() {
 
 
     return (       
-            <main>
-                <div className='containerSlides'>
-                    <Slideshow image={location.pictures} />
-                </div>
-                <div className='locationInfo'>
+        <main>
+            <div className='containerSlides'>
+                <Slideshow image={location.pictures} />
+            </div>
+            <div className='locationInfo'>
                 <h1 className='locationTitle'>{location.title}</h1>
                 <p>{location.location}</p>
                 <div className='locationTags'>
-                   {location.tags.map(tag => (
+                {location.tags.map(tag => (
                     <div key='location' className='tag'>{tag}</div>
-                   ))}
+                ))}
                 </div>
-                </div>            
-            </main>
+            </div>    
+            <div className='containerHost'>
+            <p className='hostName'>{location.host.name}</p>
+            <img src={location.host.picture} alt=''/>
+            </div>        
+        </main>
     )
 }
 
