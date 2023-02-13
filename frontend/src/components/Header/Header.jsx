@@ -6,12 +6,12 @@ import '../Header/Header.css'
 function Header() {
     return (
         <header className='containerHeader'>
-            <div className='logo-kasa'>
-                <img src={logo_kasa} alt='Kasa' className='logoStyleH' />
-            </div>
-            <div className='navbar'>
-                <Navigation />
-            </div>
+                <div className='logo-kasa'>
+                    <img src={logo_kasa} alt='Kasa' className='logoStyle' />
+                </div>
+                <div className='navbar'>
+                    <Navigation />
+                </div>
         </header>
     )
 }

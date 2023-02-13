@@ -1,6 +1,7 @@
 .containerFooter {
     display: flex; 
     justify-content: center;
+    margin-top: 2%;
     padding: 2% 7%;
     background-color: black;
 }
@@ -17,4 +18,15 @@
 
 .allRights {
     color: white;
+}
+
+@media all and (max-width: 375px) {
+    .containerFooter {
+        padding: 15%;
+    }
+
+    .allRights {
+        font-size: 12px;
+        padding-top: 5%;
+    }
 }

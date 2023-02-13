@@ -17,7 +17,7 @@ useEffect(() => {
   }, [])
 
     return ( 
-        <div>       
+        <div className='cardHome'>       
             <Banner src={home_banner} text='Chez vous, partout et ailleurs' />
             <main>
                 <div className='containerHome'>{Locations.map((location) => {

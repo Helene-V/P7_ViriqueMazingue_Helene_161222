@@ -3,14 +3,18 @@
     align-items: flex-end;
     width: 340px;
     height: 340px;
-    padding: 25px;
+    margin: 25px;
 }
 
 .cardImg {
-    border-radius: 10px;
     object-fit: cover;
     width: 340px;
     height: 340px;
+    border-radius: 25px;
+}
+
+article:hover {
+    box-shadow: 0px 0px 20px #454748;
     border-radius: 25px;
 }
 
@@ -34,4 +38,24 @@
 
 a{
     text-decoration: none;
+}
+
+@media all and (max-width: 375px) {
+    .cardContainer {
+        width: 335px;
+        height: 255px;
+        margin: 10px;
+    }
+
+    .cardImg {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .cardFilter {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
 }

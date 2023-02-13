@@ -1,18 +1,16 @@
-
 .containerBanner {
     position: relative;
-    margin: 0 4 rem;
 }
 
 .bannerImg {
-    width: 100%;
+    width: 1240px;
     height: 223px;
     object-fit: cover;
     border-radius: 25px;
 }
 
 .bannerFilter {
-    width: 100%;
+    width: 1240px;
     height: 223px;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, .3);
@@ -32,4 +30,25 @@
     font-weight: bold;
     font-size: 2rem;
     margin: 0;
+}
+
+@media all and (max-width: 375px) {
+        .bannerImg {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    .bannerFilter {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    .bannerTxt {
+        width: 70%;
+        font-size: 24px;
+        text-align: left;
+        padding-right: 40px;
+    }
 }

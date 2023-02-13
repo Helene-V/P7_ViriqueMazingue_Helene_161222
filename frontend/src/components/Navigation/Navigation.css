@@ -4,3 +4,15 @@ nav a {
     color: #FF6060;
     text-decoration-line: none;
 }
+
+@media all and (max-width: 375px) {
+	nav a {
+		font-size: 12px;
+        text-transform: uppercase;
+        margin-left: 20px;
+	}
+}
+
+@media all and (min-width: 414px) and (max-width: 768px) {
+
+}

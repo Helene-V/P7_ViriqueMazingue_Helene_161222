@@ -1,11 +1,28 @@
 .containerHeader {
     display: flex;
     justify-content: space-between;
-    padding: 2% 7%;
     align-items: center;
+    width: 1240px;
+    margin: auto;
+    padding: 2% 7%;
 }
 
 .logoStyle {
-    height: 5vmin;
+    height: 11vmin;
 }
 
+@media all and (max-width: 375px) {
+	.containerHeader {
+        width: 335px;
+		margin: auto;
+        padding: 5%;
+	}
+
+    .logoStyle {
+        height: 6vmin;
+    }
+}
+
+@media all and (min-width: 992px) {
+
+}
