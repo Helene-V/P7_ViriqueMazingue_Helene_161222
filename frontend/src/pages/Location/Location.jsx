@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Tag from '../../components/Tag/Tag';
 import Rating from '../../components/Rating/Rating';
+import Collapse from '../../components/Collapse/Collapse';
 import { dataLocations } from '../../data/dataLocations';
 import '../Location/Location.css';
 
@@ -31,7 +32,11 @@ function Location() {
                 <p className='hostName'>{location.host.name}</p>
                 <img src={location.host.picture} alt=''/>
                 <Rating ratingValue={location.rating} />
-            </div>        
+            </div>
+            <div>
+                <Collapse />
+                <Collapse />
+            </div>    
         </main>
     )
 }
