@@ -32,4 +32,4 @@ export default Banner;
 
 //<h1>{text}</h1> que je récup depuis la page home
 
-//https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7136837-partagez-votre-state-entre-differents-composants
+//https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7136837-partagez-votre-state-entre-differe
