@@ -30,7 +30,7 @@ function Location() {
             <div className='containerHost'>
                 <p className='hostName'>{location.host.name}</p>
                 <img src={location.host.picture} alt=''/>
-                <Rating />
+                <Rating ratingValue={location.rating} />
             </div>        
         </main>
     )
