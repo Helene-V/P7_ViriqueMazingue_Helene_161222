@@ -7,7 +7,7 @@ import '../About/About.css';
 function About() {
     return (
         <div>       
-            <Banner src={require('../../assets/about_banner.jpg')} />
+            <Banner className='aboutBanner' src={require('../../assets/about_banner.jpg')} />
             <div className='aboutContainer'>
                 <Collapse title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
                 <Collapse title="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>
@@ -19,5 +19,3 @@ function About() {
 }
 
 export default About
-
-//Changer le contenu de la bannière selon la page
