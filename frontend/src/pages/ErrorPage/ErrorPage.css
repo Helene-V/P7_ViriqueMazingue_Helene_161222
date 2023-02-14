@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5%;
 }
 
 .errorTitle {
@@ -12,6 +13,7 @@
 
 .errorParagraph {
     font-size: 36px;
+    padding-bottom: 7%;
     color:#FF6060;
 }
 
@@ -19,5 +21,27 @@
     font-size: 18px;
     border-bottom: solid 1px #FF6060;
     color:#FF6060;
-    margin: 100px;
+}
+
+@media all and (max-width: 375px) {
+    .errorContainer {
+        padding-bottom: 37%;
+    }
+
+    .errorTitle {
+        font-size: 96px;
+        margin-top: 30%;
+    }
+
+    .errorParagraph {
+        font-size: 18px;
+        text-align: center;
+        padding: 1% 10% 20% 10%;
+        margin-top: 4%;
+    }
+
+    .errorLink{
+        font-size: 14px;
+        text-align: center;
+    }
 }

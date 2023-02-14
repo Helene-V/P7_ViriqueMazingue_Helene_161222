@@ -1,9 +1,14 @@
 .aboutContainer {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10%;
 }
 
-.aboutBanner {
-    width: 80%;
-    margin: auto;
+@media all and (max-width: 375px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 45%;
+    }
+
 }
