@@ -15,34 +15,38 @@ function Location() {
 
 
     return (       
-        <main>
+        <div className='locationContainer'>
             <div className='containerSlides'>
                 <Slideshow image={location.pictures} />
             </div>
+            <div className='location'>
             <div className='locationInfo'>
-                <h1 className='locationTitle'>{location.title}</h1>
-                <p>{location.location}</p>
-                <div className='locationTags'>
-                    {location.tags.map(tag => (
-                        <Tag key={tag} tag={tag} />
-                    ))}
-                </div>
-            </div>    
+                <div className='locationTitle'>{location.title}</div>
+                    <p className='locationLocalisation'>{location.location}</p>
+                    <div className='locationTags'>
+                        {location.tags.map(tag => (
+                            <Tag key={tag} tag={tag} />
+                        ))}
+                    </div>
+                </div>    
             <div className='containerHost'>
+                <div className='namePict'>
                 <p className='hostName'>{location.host.name}</p>
-                <img src={location.host.picture} alt=''/>
+                <img className='profil' src={location.host.picture} alt=''/>
+                </div>
                 <Rating ratingValue={location.rating} />
             </div>
-            <div>
-                <Collapse title="Description" description={location.description} />
-                <Collapse title="Équipements" description={
+            </div>
+            <div className='locationCollapse'>
+                <Collapse className='descriptionCollapse' title="Description" description={location.description} />
+                <Collapse className='equipmentCollapse' title="Équipements" description={
                     <ul>{location.equipments.map(equipments => (
                         <li key={equipments}>{equipments}</li>
                         ))}
                     </ul>}
                 />
             </div>    
-        </main>
+        </div>
     )
 }
 

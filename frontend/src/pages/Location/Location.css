@@ -1,17 +1,20 @@
-main {
+.locationContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .containerSlides {
     display: flex;
     justify-content: space-around;
+    margin-bottom: -6%;
 }
 
 .locationTitle {
     display: flex;
     flex-direction: row;
     font-size: 36px;
+    font-weight: 500;
     color:#FF6060;
 }
 
@@ -20,4 +23,44 @@ main {
     flex-direction: column;
     font-size: 18px;
     color:#FF6060;
+}
+
+.locationLocalisation {
+    display: flex;
+}
+
+.profil {
+    display: flex;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.hostName {
+    font-size: 18px;
+    padding-right: 10px;
+    color:#FF6060;
+}
+
+.locationCollapse {
+    display: flex;
+}
+
+.descriptionCollapse,
+.equipmentCollapse {
+    display: flex;
+    width: 10%;
+}
+
+.location {
+    display: flex;
+    width: 1240px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.namePict {
+    display: flex;
+    width: 10%;
 }
