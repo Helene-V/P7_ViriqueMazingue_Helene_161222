@@ -4,6 +4,7 @@ import Slideshow from '../../components/Slideshow/Slideshow';
 import Tag from '../../components/Tag/Tag';
 import Rating from '../../components/Rating/Rating';
 import Collapse from '../../components/Collapse/Collapse';
+import ErrorPage from '../ErrorPage/ErrorPage';
 import { dataLocations } from '../../data/dataLocations';
 import '../Location/Location.css';
 
@@ -13,6 +14,9 @@ function Location() {
     const location = dataLocations.getLocationsById(id)
     console.log(location)
 
+    if (!location) {
+        return <ErrorPage />
+    }
 
     return (       
         <div className='locationContainer'>
@@ -31,10 +35,10 @@ function Location() {
                 </div>    
             <div className='containerHost'>
                 <div className='namePict'>
-                <p className='hostName'>{location.host.name}</p>
-                <img className='profil' src={location.host.picture} alt=''/>
+                    <p className='hostName'>{location.host.name}</p>
+                    <img className='profil' src={location.host.picture} alt=''/>
                 </div>
-                <Rating ratingValue={location.rating} />
+                <Rating className='locationRating' ratingValue={location.rating} />
             </div>
             </div>
             <div className='locationCollapse'>

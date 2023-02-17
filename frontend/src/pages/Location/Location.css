@@ -7,7 +7,10 @@
 .containerSlides {
     display: flex;
     justify-content: space-around;
-    margin-bottom: -6%;
+}
+
+.containerHost {
+    flex-flow: column;
 }
 
 .locationTitle {
@@ -47,10 +50,12 @@
     display: flex;
 }
 
-.descriptionCollapse,
-.equipmentCollapse {
-    display: flex;
-    width: 10%;
+.locationCollapse .collapseRoll {
+    width: 550px;
+}
+
+.locationCollapse .collapseDescription {
+    width: 550px;
 }
 
 .location {
@@ -60,7 +65,15 @@
     align-items: center;
 }
 
+.locationRating {
+    display: flex;
+}
+
 .namePict {
     display: flex;
-    width: 10%;
+    width: 20px;
+}
+
+ul {
+    list-style-type: none;
 }

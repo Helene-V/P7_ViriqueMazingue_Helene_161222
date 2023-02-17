@@ -6,7 +6,7 @@ import '../About/About.css';
 
 function About() {
     return (
-        <div>       
+        <div className='cardBanner'>       
             <Banner className='aboutBanner' src={require('../../assets/about_banner.jpg')} />
             <div className='aboutContainer'>
                 <Collapse title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />

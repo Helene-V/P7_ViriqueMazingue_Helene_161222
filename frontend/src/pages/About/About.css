@@ -11,4 +11,8 @@
         padding-bottom: 45%;
     }
 
+    .cardBanner .bannerFilter {
+        height: 223px;
+    }
+
 }

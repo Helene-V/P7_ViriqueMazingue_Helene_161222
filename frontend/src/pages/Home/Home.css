@@ -26,9 +26,17 @@ main {
 
     .containerHome {
         display: flex;
-        flex-direction: inherit;
         align-items: center;
         justify-content: center;
+        flex-flow: column;
         padding: 2%;
+    }
+
+    .cardHome .bannerImg {
+        height: 150px;
+    }
+
+    .bannerFilter {
+        height: 150px;
     }
 }
