@@ -25,10 +25,10 @@ function handlePrevious() {
                 <>
                 <div className='slideshowArrow'>
                     <div className='slideshowArrowNext'>
-                    <img src={require('../../assets/location_arrow_left.png')} onClick={handleNext} alt='next' />
+                    <img className='arrowNext' src={require('../../assets/location_arrow_left.png')} onClick={handleNext} alt='next' />
                     </div>
                     <div className='slideshowArrowPrev'>
-                    <img src={require('../../assets/location_arrow_right.png')}onClick={handlePrevious} alt='previous'/>
+                    <img className='arrowPrev' src={require('../../assets/location_arrow_right.png')}onClick={handlePrevious} alt='previous'/>
                     </div>
                 </div>
                     <p className='indexPictures'>{imageIndex + 1}/{image.length}</p>

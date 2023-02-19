@@ -7,28 +7,28 @@
 
 .slideshowArrowNext,
 .slideshowArrowPrev {
-    position: inherit;
-    transform: translateY(-300%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 46.68px;
     height: auto;
     cursor: pointer;
 }
 
-.slideshowArrow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.slideshowArrowPrev {
+    left: 76.7%;
 }
 
 .indexPictures {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateY(-700%);
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateY(-50%);
     font-size: 18px;
     color: #FFFFFF;
 }
 
 .slideshowContainer {
-    margin-bottom: -10%;
+    margin-bottom: -5%;
 }
+

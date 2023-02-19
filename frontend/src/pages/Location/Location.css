@@ -60,9 +60,10 @@
 
 .location {
     display: flex;
-    width: 1240px;
     justify-content: space-between;
     align-items: center;
+    width: 1240px;
+    margin-top: 3%;
 }
 
 .locationRating {
@@ -76,4 +77,45 @@
 
 ul {
     list-style-type: none;
+}
+
+@media all and (max-width: 375px) {
+    .locationContainer .slideshowImage {
+        width: 335px;
+        height: 255px;
+        margin: auto;
+    }
+
+    .locationContainer .arrowNext {
+        width: 12px;
+        height: 20px;
+    }
+
+    .locationContainer .arrowPrev {
+        width: 12px;
+        height: 20px;
+    }
+
+    .location {
+        width: 90%;
+    }
+
+    .locationContainer .indexPictures {
+        bottom: 60%;
+    }
+
+    .locationCollapse {
+        width: 90%;
+        flex-flow: column;
+    }
+
+    .locationContainer .slideshowArrowNext {
+        top: 25%;
+    }
+
+    .locationContainer .slideshowArrowPrev {
+        top: 25%;
+        left: 91.5%;
+    }
+
 }
