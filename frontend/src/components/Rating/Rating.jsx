@@ -13,12 +13,14 @@ return (
             {stars.map((star) =>
             star <= ratingValue ? (
                 <img
+                    className='star'
                     key={star}
                     src={star_color}
                     alt=''
                 />
             ) : (
                 <img
+                    className='star'
                     key={star}
                     src={star_empty}
                     alt=''

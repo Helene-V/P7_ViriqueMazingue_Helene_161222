@@ -98,6 +98,7 @@ ul {
 
     .location {
         width: 90%;
+        display: inline;
     }
 
     .locationContainer .indexPictures {
@@ -118,4 +119,56 @@ ul {
         left: 91.5%;
     }
 
+    .locationTitle {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .locationLocalisation {
+        font-size: 14px;
+    }
+
+    .hostName {
+        font-size: 12px;
+    }
+
+    .tag {
+        font-size: 10px;
+    }
+
+    .containerRating .star {
+        width: 15px;
+        height: 15px;
+    } 
+
+    .containerHost {
+        display: flex;
+        align-items: center;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .profil {
+        width: 32px;
+        height: 32px;
+        margin: auto;
+    }
+
+    .locationCollapse .collapseRoll {
+        width: 335px;
+    }
+
+    .locationCollapse .collapseDescription {
+        width: 335px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .collapseRoll .collapseArrow {
+        width: 14px;
+        height: 11px;
+    }
 }

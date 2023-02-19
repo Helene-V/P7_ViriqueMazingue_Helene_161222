@@ -14,7 +14,7 @@ function Collapse(data) {
             <div className='collapseRoll'>
                 <h1 className='collapseTitle'>{title}</h1>
                 <span onClick={() => setOpenCollapse(!openCollapse)}>
-                    <img src={about_arrow} alt="onglet déroulant"
+                    <img className='collapseArrow' src={about_arrow} alt="onglet déroulant"
                         onClick={() => setRotate(!rotate)}
                         style={{
                             transition: "transform .3s",
