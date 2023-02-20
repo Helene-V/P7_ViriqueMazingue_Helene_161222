@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import { dataLocations } from '../../data/dataLocations';
-import home_banner from '../../assets/home_banner.jpg'
+import home_banner from '../../assets/home_banner.jpg';
 import '../Home/Home.css';
 
 function Home() {
@@ -34,7 +34,4 @@ useEffect(() => {
     )
 }
 
-export default Home
-
-
-//src={require(`../../assets/${home_banner}.jpg`)}
+export default Home;

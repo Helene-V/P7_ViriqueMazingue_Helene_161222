@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
-import logo_kasa from '../../assets/logo_kasa.png'
-import '../Header/Header.css'
+import logo_kasa from '../../assets/logo_kasa.png';
+import '../Header/Header.css';
 
 function Header() {
     return (
@@ -16,4 +16,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;

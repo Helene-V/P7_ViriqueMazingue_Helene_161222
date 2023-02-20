@@ -1,6 +1,6 @@
-import React from "react";
-import logo_kasa_w from '../../assets/logo_kasa_w.png'
-import '../Footer/Footer.css'
+import React from 'react';
+import logo_kasa_w from '../../assets/logo_kasa_w.png';
+import '../Footer/Footer.css';
 
 function Footer() {
     return (
@@ -17,4 +17,4 @@ function Footer() {
     )
 }
 
-export default Footer
+export default Footer;

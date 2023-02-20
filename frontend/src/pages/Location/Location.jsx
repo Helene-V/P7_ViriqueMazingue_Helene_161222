@@ -24,34 +24,34 @@ function Location() {
                 <Slideshow image={location.pictures} />
             </div>
             <div className='location'>
-            <div className='locationInfo'>
-                <div className='locationTitle'>{location.title}</div>
-                    <p className='locationLocalisation'>{location.location}</p>
-                    <div className='locationTags'>
-                        {location.tags.map(tag => (
-                            <Tag key={tag} tag={tag} />
-                        ))}
+                <div className='locationInfo'>
+                    <div className='locationTitle'>{location.title}</div>
+                        <p className='locationLocalisation'>{location.location}</p>
+                        <div className='locationTags'>
+                            {location.tags.map(tag => (
+                                <Tag key={tag} tag={tag} />
+                            ))}
+                        </div>
+                    </div>    
+                    <div className='containerHost'>
+                        <div className='namePict'>
+                            <p className='hostName'>{location.host.name}</p>
+                            <img className='profil' src={location.host.picture} alt=''/>
+                        </div>
+                        <Rating className='locationRating' ratingValue={location.rating} />
                     </div>
-                </div>    
-            <div className='containerHost'>
-                <div className='namePict'>
-                    <p className='hostName'>{location.host.name}</p>
-                    <img className='profil' src={location.host.picture} alt=''/>
                 </div>
-                <Rating className='locationRating' ratingValue={location.rating} />
-            </div>
-            </div>
             <div className='locationCollapse'>
                 <Collapse className='descriptionCollapse' title="Description" description={location.description} />
                 <Collapse className='equipmentCollapse' title="Équipements" description={
-                    <ul>{location.equipments.map(equipments => (
-                        <li key={equipments}>{equipments}</li>
-                        ))}
-                    </ul>}
+                <ul>{location.equipments.map(equipments => (
+                    <li key={equipments}>{equipments}</li>
+                    ))}
+                </ul>}
                 />
             </div>    
         </div>
     )
 }
 
-export default Location
+export default Location;

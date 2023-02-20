@@ -8,7 +8,6 @@ function Collapse(data) {
     const title = data.title
     const description = data.description
 
-
     return(
         <div className='collapseContainer'>
             <div className='collapseRoll'>
@@ -29,5 +28,3 @@ function Collapse(data) {
 }
 
 export default Collapse;
-
-//image de la bannière à changer

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../Slideshow/Slideshow.css';
 
-
 function Slideshow(location) {
     const image = location.image
     const [imageIndex, setImageIndex] = useState(0);
