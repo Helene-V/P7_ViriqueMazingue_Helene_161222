@@ -63,5 +63,7 @@ main {
 @media all and (min-width: 1500px) {
 	.containerHome {
         max-width: 1240px;
+        padding-top: 25px;
+        padding-bottom: 25px;
 	}
 }

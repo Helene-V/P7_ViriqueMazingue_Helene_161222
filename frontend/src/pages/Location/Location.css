@@ -80,43 +80,15 @@ ul {
 }
 
 @media all and (max-width: 375px) {
-    .locationContainer .slideshowImage {
-        width: 335px;
-        height: 255px;
-        margin: auto;
-    }
-
-    .locationContainer .arrowNext {
-        width: 12px;
-        height: 20px;
-    }
-
-    .locationContainer .arrowPrev {
-        width: 12px;
-        height: 20px;
-    }
-
     .location {
         width: 90%;
         display: inline;
     }
 
-    .locationContainer .indexPictures {
-        bottom: 60%;
-    }
-
     .locationCollapse {
         width: 90%;
         flex-flow: column;
-    }
-
-    .locationContainer .slideshowArrowNext {
-        top: 25%;
-    }
-
-    .locationContainer .slideshowArrowPrev {
-        top: 25%;
-        left: 91.5%;
+        padding-bottom: 20%;
     }
 
     .locationTitle {
@@ -174,7 +146,7 @@ ul {
 }
 
 @media all and (min-width: 376px) and (max-width: 767px) {
-
+    
 }
 
 @media all and (min-width: 768px) and (max-width: 1499px) {

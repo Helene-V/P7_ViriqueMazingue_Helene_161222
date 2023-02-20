@@ -8,12 +8,14 @@
 .errorTitle {
     font-size: 288px;
     font-weight: 700;
+    padding: 5%;
     color:#FF6060;
 }
 
 .errorParagraph {
     font-size: 36px;
     padding-bottom: 7%;
+    text-align: center;
     color:#FF6060;
 }
 
@@ -30,7 +32,7 @@
 
     .errorTitle {
         font-size: 96px;
-        margin-top: 30%;
+        padding: 30%;
     }
 
     .errorParagraph {
@@ -43,5 +45,43 @@
     .errorLink{
         font-size: 14px;
         text-align: center;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 767px) {
+    .errorContainer {
+        padding-bottom: 37%;
+    }
+
+    .errorTitle {
+        font-size: 120px;
+        padding: 20%;
+    }
+
+    .errorParagraph {
+        font-size: 20px;
+        padding: 1% 10% 20% 10%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1499px) {
+    .errorContainer {
+        padding-bottom: 37%;
+    }
+
+    .errorTitle {
+        font-size: 200px;
+        padding: 10%;
+    }
+    
+    .errorParagraph {
+        font-size: 24px;
+        margin-bottom: 5%;
+    }
+}
+
+@media all and (min-width: 1500px) {
+	.errorTitle {
+        font-size: 288px;
     }
 }
