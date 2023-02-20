@@ -8,21 +8,38 @@
 }
 
 .logoStyle {
-    height: 11vmin;
+    height: 9vmin;
 }
 
 @media all and (max-width: 375px) {
 	.containerHeader {
-        width: 335px;
-		margin: auto;
+        width: 85%;
+	}
+
+    .logoStyle {
+        height: 7vmin;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 767px) {
+	.containerHeader {
+        width: 90%;
         padding: 5%;
 	}
 
     .logoStyle {
-        height: 6vmin;
+        height: 7vmin;
     }
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 1499px) {
+	.containerHeader {
+        max-width: 90%;
+	}
+}
 
+@media all and (min-width: 1500px) {
+	.containerHeader {
+        max-width: 1240px;
+	}
 }

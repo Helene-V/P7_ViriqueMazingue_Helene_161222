@@ -2,7 +2,7 @@
     display: flex; 
     justify-content: center;
     margin-top: 2%;
-    padding: 2% 7%;
+    padding: 4%;
     background-color: black;
 }
 
@@ -18,15 +18,48 @@
 
 .allRights {
     color: white;
+    font-size: 24px;
 }
 
 @media all and (max-width: 375px) {
     .containerFooter {
-        padding: 15%;
+        padding: 12%;
     }
 
     .allRights {
         font-size: 12px;
-        padding-top: 5%;
+        padding-top: 2%;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 767px) {
+    .containerFooter {
+        padding: 10%;
+    }
+
+    .allRights {
+        font-size: 12px;
+        padding-top: 2%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1499px) {
+    .containerFooter {
+        padding: 5%;
+    }
+
+    .allRights {
+        font-size: 24px;
+        padding-top: 2%;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    .containerFooter {
+        padding: 2%;
+    }
+
+    .allRights {
+        font-size: 24px;
     }
 }

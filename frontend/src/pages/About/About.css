@@ -1,18 +1,40 @@
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 
 @media all and (max-width: 375px) {
     .aboutContainer {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 45%;
+        padding-bottom: 40%;
     }
 
     .cardBanner .bannerFilter {
         height: 223px;
     }
+}
 
+@media all and (min-width: 376px) and (max-width: 767px) {
+	.aboutContainer {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 30%;
+        display: inline;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 1499px) {
+	.aboutContainer {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20%;
+	}
+}
+
+@media all and (min-width: 1500px) {
+	.aboutContainer {
+        max-width: 1240px;
+        margin: auto;
+        padding-bottom: 10%;
+	}
 }

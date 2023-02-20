@@ -57,11 +57,11 @@ span {
     }
 
     .collapseTitle {
-    width: 335px;
-    height: 30px;
-    padding-left: 16px;
-    font-size: 13px;
-}
+        width: 335px;
+        height: 30px;
+        padding-left: 16px;
+        font-size: 13px;
+    }
 
     .collapseDescription {
         display: flex;
@@ -74,5 +74,62 @@ span {
 
     .collapseContainer {
         margin: 15px;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 767px) {
+	.collapseRoll {
+        width: 100%;
+        height: 30px;
+        padding-right: 10px;
+    }
+
+    .collapseTitle {
+        width: 86%;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .collapseDescription {
+        width: 95%;
+        height: auto;
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1499px) {
+    .collapseRoll {
+        width: 90%;
+        height: 47px;
+        padding-right: 20px;
+    }
+
+    .collapseTitle {
+        width: 90%;
+        height: 47px;
+}
+
+    .collapseDescription {
+        width: 88%;
+        height: auto;
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    .collapseRoll {
+        width: 1023px;
+        height: 47px;
+        padding-right: 30px;
+    }
+
+    .collapseTitle {
+        width: 1023px;
+        height: 47px;
+}
+
+    .collapseDescription {
+        width: 1023px;
+        height: auto;
     }
 }

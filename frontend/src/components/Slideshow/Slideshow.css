@@ -9,7 +9,7 @@
 .slideshowArrowPrev {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     width: 46.68px;
     height: auto;
     cursor: pointer;
@@ -21,9 +21,9 @@
 
 .indexPictures {
     position: absolute;
-    bottom: 15%;
+    bottom: 25%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     font-size: 18px;
     color: #FFFFFF;
 }

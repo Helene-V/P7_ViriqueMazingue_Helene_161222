@@ -10,7 +10,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2%;
 }
 
 .cardHome {
@@ -29,7 +28,6 @@ main {
         align-items: center;
         justify-content: center;
         flex-flow: column;
-        padding: 2%;
     }
 
     .cardHome .bannerImg {
@@ -39,4 +37,31 @@ main {
     .bannerFilter {
         height: 150px;
     }
+}
+
+@media all and (min-width: 376px) and (max-width: 767px) {
+    main {
+        width: 95%;
+    }
+
+    .containerHome {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1499px) {
+    main {
+        width: 82%;
+    }
+
+    .containerHome {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 1500px) {
+	.containerHome {
+        max-width: 1240px;
+	}
 }
