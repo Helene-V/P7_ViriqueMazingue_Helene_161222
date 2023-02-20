@@ -7,13 +7,13 @@ function Slideshow(location) {
 
 function handleNext() {
     setImageIndex((prevIndex) => {
-        return prevIndex + 1 < image.length ? prevIndex + 1 : 0;
+        return prevIndex > 0 ? prevIndex - 1 : image.length -1;
     })
 }
 
 function handlePrevious() {
     setImageIndex((prevIndex) => {
-        return prevIndex > 0 ? prevIndex - 1 : image.length -1;
+        return prevIndex + 1 < image.length ? prevIndex + 1 : 0;
     })
 }
 
