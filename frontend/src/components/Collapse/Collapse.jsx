@@ -3,6 +3,7 @@ import about_arrow from '../../assets/about_arrow.png';
 import '../Collapse/Collapse.css';
 
 function Collapse(data) {
+    // Récupération des props et utilisation du state pour modifier l'état du component s'il est ouvert ou fermé
     const [openCollapse, setOpenCollapse] = useState(false);
     const [rotate, setRotate] = useState(true);
     const title = data.title

@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
+// Les routes avec React JS v6
 function App() {
     return (
       <>

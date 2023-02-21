@@ -5,6 +5,7 @@ import '../About/About.css';
 
 
 function About() {
+    // Création de la page à propos avec intégration du texte dans le component Collapse
     return (
         <div className='cardBanner'>       
             <Banner className='aboutBanner' src={require('../../assets/about_banner.jpg')} />

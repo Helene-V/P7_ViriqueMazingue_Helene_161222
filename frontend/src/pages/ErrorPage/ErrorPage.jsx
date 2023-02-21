@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../ErrorPage/ErrorPage.css';
 
 function ErrorPage() {
+    // Création d'une page d'erreur et utilisation de NavLink pour retourner sur la page d'accueil
     return (
         <div className="errorContainer">
             <div className="errorTitle">404</div>

@@ -9,11 +9,11 @@ import { dataLocations } from '../../data/dataLocations';
 import '../Location/Location.css';
 
 function Location() {
-
+    // Récupération de la data par id pour afficher le contenu par location sur la fiche logement
     let {id} = useParams()
     const location = dataLocations.getLocationsById(id)
-    console.log(location)
 
+    // Affichage page d'erreur
     if (!location) {
         return <ErrorPage />
     }

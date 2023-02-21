@@ -7,7 +7,7 @@ import home_banner from '../../assets/home_banner.jpg';
 import '../Home/Home.css';
 
 function Home() {
-
+    // Récupération et affichage de toutes les locations sur la page d'accueil
     const [Locations, setLocations] = useState([]);
 
 useEffect(() => {

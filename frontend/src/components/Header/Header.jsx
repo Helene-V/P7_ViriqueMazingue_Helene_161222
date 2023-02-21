@@ -4,6 +4,7 @@ import logo_kasa from '../../assets/logo_kasa.png';
 import '../Header/Header.css';
 
 function Header() {
+    // Imbrication du component Navigation dans le component Header
     return (
         <header className='containerHeader'>
                 <div className='logo-kasa'>
