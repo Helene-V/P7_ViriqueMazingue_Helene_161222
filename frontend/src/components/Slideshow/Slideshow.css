@@ -1,3 +1,8 @@
+.slideshowContainer {
+    margin-bottom: -5%;
+    position: relative;
+}
+
 .slideshowImage {
     width: 1240px;
     height: 415px;
@@ -9,28 +14,27 @@
 .slideshowArrowPrev {
     position: absolute;
     top: 50%;
-    transform: translateY(-60%);
-    width: 46.68px;
-    height: auto;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     margin: auto;
 }
 
 .slideshowArrowPrev {
-    left: 84%;
+    right: 0;
 }
 
 .indexPictures {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translateY(-40%);
+    display: flex;
+    justify-content: center;
+    align-self: center;
     font-size: 18px;
+    margin-top: -40px;
     color: #FFFFFF;
-}
-
-.slideshowContainer {
-    margin-bottom: -5%;
 }
 
 @media all and (max-width: 375px) {
@@ -50,17 +54,8 @@
         height: 20px;
     }
 
-    .slideshowArrowNext {
-        top: 20%;
-    }
-
-    .slideshowArrowPrev {
-        top: 20%;
-        left: 92%;
-    }
-
     .indexPictures {
-        bottom: 71%;
+        font-size: 12px;
     }
 }
 
@@ -81,17 +76,11 @@
     }
 
     .slideshowArrowNext {
-        top: 22%;
-        left: 5%;
+        left: 2%;
     }
 
     .slideshowArrowPrev {
-        top: 22%;
-        left: 92%;
-    }
-    
-    .indexPictures {
-        bottom: 63%;
+        right: 2%;
     }
 }
 
@@ -107,34 +96,11 @@
     .arrowPrev {
         width: 40%;
     }
-
-    .slideshowArrowNext {
-        top: 38%;
-        left: 4%;
-    }
-
-    .slideshowArrowPrev {
-        top: 38%;
-        left: 93%;
-    }
-    
-    .indexPictures {
-        bottom: 50%;
-    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1499px) {
     .slideshowImage {
-        width: 100%;
-    }
-
-    .slideshowArrowNext,
-    .slideshowArrowPrev {
-        top: 30%;
-    }
-
-    .slideshowArrowPrev {
-        left: 82%;
+        width: 773px;
     }
 
     .indexPictures {
@@ -143,12 +109,4 @@
 }
 
 @media all and (min-width: 1500px) {
-    .slideshowArrowNext,
-    .slideshowArrowPrev {
-        top: 36%;
-    }
-    
-    .indexPictures {
-        bottom: 46%;
-    }
 }

@@ -91,6 +91,23 @@ ul {
         padding-bottom: 20%;
     }
 
+    .locationCollapse .collapseRoll {
+        width: 335px;
+    }
+
+    .locationCollapse .collapseDescription {
+        width: 335px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .collapseRoll .collapseArrow {
+        width: 14px;
+        height: 11px;
+    }
+
     .locationTitle {
         font-size: 18px;
         margin-top: 15px;
@@ -126,31 +143,39 @@ ul {
         height: 32px;
         margin: auto;
     }
-
-    .locationCollapse .collapseRoll {
-        width: 335px;
-    }
-
-    .locationCollapse .collapseDescription {
-        width: 335px;
-    }
-
-    ul {
-        padding: 0;
-    }
-
-    .collapseRoll .collapseArrow {
-        width: 14px;
-        height: 11px;
-    }
 }
 
 @media all and (min-width: 376px) and (max-width: 767px) {
-    
+    .location {
+        width: 90%;
+        display: inline;
+    }
+
+    .locationTitle {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .containerHost {
+        margin-top: 25px;
+    }
+
+    .locationCollapse {
+        flex-flow: column;
+        padding-bottom: 20%;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1499px) {
+    .location {
+        width: 90%;
+        display: inline;
+    }
 
+    .locationCollapse {
+        flex-flow: column;
+        padding-bottom: 20%;
+    }
 }
 
 @media all and (min-width: 1500px) {
