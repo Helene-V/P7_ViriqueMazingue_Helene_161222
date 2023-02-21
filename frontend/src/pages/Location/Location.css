@@ -164,17 +164,47 @@ ul {
         flex-flow: column;
         padding-bottom: 20%;
     }
+
+    .locationCollapse .collapseRoll {
+        width: 347px;
+    }
+
+    .locationCollapse .collapseDescription {
+        width: 347px;
+    }
+
+    .locationCollapse .collapseDescription {
+        padding: 25px 0px 15px 12px;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1499px) {
     .location {
-        width: 90%;
-        display: inline;
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .locationTitle {
+        font-size: 28px;
     }
 
     .locationCollapse {
         flex-flow: column;
         padding-bottom: 20%;
+    }
+
+    .locationCollapse .collapseDescription {
+        padding: 25px 9px 15px 12px;
+    }
+
+    .locationInfo {
+        width: 78%;
+    }
+
+    .star {
+        width: 20px;
+        height: 20px;
     }
 }
 
