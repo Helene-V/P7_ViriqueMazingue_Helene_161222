@@ -5,8 +5,8 @@ function Tag(tags) {
     // Récupération des tags des logements (props)
     const tag = tags.tag
 
-return (
-        <div className='tag'>{tag}</div>
+    return (
+            <div className='tag'>{tag}</div>
     );
 }
 
