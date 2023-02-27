@@ -1,13 +1,13 @@
 import Locations from './data.json';
 
-// Création de deux objets en js pour utiliser la data provenant de data.json
+// Création de deux objets pour utiliser la data provenant de data.json
 
-// Récupération de toute la data
+// Récupération de toute la data utile pour la page Home
 const getLocations = () => {
   return Locations
 };
 
-// Récupération data par id
+// Récupération data par id utile pour la page Location - opérateur d'égalité stricte
 const getLocationsById = (id) => {
   return Locations.find(location => location.id === id);
 };

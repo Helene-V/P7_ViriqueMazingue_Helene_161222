@@ -20,7 +20,7 @@ function handlePrevious() {
         return prevIndex + 1 < image.length ? prevIndex + 1 : 0;
     })
 }
-    // Affichage des flèches directionnelles s'il y a plus d'une image dans le carrousel
+    // Affichage des flèches directionnelles et de l'index s'il y a plus d'une image dans le carrousel
     return (
         <div className='slideshowContainer'>
             <img className='slideshowImage' src={image[imageIndex]} alt='slide' />

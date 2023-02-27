@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../Navigation/Navigation.css';
 
 function Navigation() {
-    // Styled component
+    // Styled component avec opérateur logique
     const navStyle = ({ isActive }) => {
         return {
             borderBottom: isActive && "3px solid #FF6060"

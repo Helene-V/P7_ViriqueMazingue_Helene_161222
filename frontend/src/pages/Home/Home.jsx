@@ -9,12 +9,10 @@ import '../Home/Home.css';
 function Home() {
     // Récupération et affichage de toutes les locations sur la page d'accueil
     const [Locations, setLocations] = useState([]);
-
-useEffect(() => {
     
-    setLocations(dataLocations.getLocations());
-    
-  }, [])
+    useEffect(() => {
+        setLocations(dataLocations.getLocations());
+    }, [])
 
     return ( 
         <div className='cardHome'>       

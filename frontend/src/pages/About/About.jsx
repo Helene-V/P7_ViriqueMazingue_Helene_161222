@@ -3,7 +3,6 @@ import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
 import '../About/About.css';
 
-
 function About() {
     // Création de la page à propos avec intégration du texte dans le component Collapse
     return (
