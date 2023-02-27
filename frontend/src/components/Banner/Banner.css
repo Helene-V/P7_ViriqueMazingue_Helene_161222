@@ -64,6 +64,10 @@
     .bannerFilter {
         width: 95%;
     }
+
+    .bannerTxt {
+        font-size: 30px;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1499px) {
