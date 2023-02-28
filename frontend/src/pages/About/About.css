@@ -4,37 +4,22 @@
     margin-bottom: 20%;
 }
 
-@media all and (max-width: 375px) {
-    .aboutContainer {
-        padding-bottom: 40%;
-    }
-
-    .cardBanner .bannerFilter {
-        height: 223px;
-    }
-}
-
-@media all and (min-width: 376px) and (max-width: 767px) {
-	.aboutContainer {
-        width: 100%;
-        margin: auto;
-        padding-bottom: 30%;
-        display: inline;
-	}
-}
-
-@media all and (min-width: 768px) and (max-width: 1499px) {
-	.aboutContainer {
-        width: 90%;
-        margin: auto;
-        padding-bottom: 20%;
-	}
-}
-
-@media all and (min-width: 1500px) {
+@media only screen and (max-width: 1200px) {
 	.aboutContainer {
         max-width: 1240px;
         margin: auto;
         padding-bottom: 10%;
 	}
+}
+
+@media only screen and (max-width: 512px) {
+	.aboutContainer {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 30%;
+	}
+
+    .cardBanner .bannerFilter {
+        height: 223px;
+    }
 }

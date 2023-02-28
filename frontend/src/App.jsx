@@ -6,7 +6,6 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 import About from './pages/About/About';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import './App.css';
 
 // Les routes avec React JS v6
 function App() {

@@ -18,7 +18,41 @@ main {
     align-items: center;
 }
 
-@media all and (max-width: 375px) {
+@media only screen and (max-width: 1400px) {
+	.containerHome {
+        max-width: 1240px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        width: 82%;
+    }
+
+    .containerHome {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    main {
+        width: 95%;
+    }
+
+    .containerHome {
+        width: 100%;
+    }
+
+    .containerCard {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 512px) {
     main {
         background-color: transparent;
     }
@@ -37,33 +71,8 @@ main {
     .bannerFilter {
         height: 150px;
     }
-}
-
-@media all and (min-width: 376px) and (max-width: 767px) {
-    main {
-        width: 95%;
-    }
 
     .containerHome {
-        width: 100%;
-    }
-}
-
-@media all and (min-width: 768px) and (max-width: 1499px) {
-    main {
-        width: 82%;
-    }
-
-    .containerHome {
-        width: 100%;
-        margin: auto;
-    }
-}
-
-@media all and (min-width: 1500px) {
-	.containerHome {
-        max-width: 1240px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 15px;
 	}
 }

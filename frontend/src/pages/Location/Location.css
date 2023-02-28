@@ -63,7 +63,7 @@
     justify-content: space-between;
     align-items: center;
     width: 1240px;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 .locationRating {
@@ -79,7 +79,44 @@ ul {
     list-style-type: none;
 }
 
-@media all and (max-width: 375px) {
+@media only screen and (max-width: 960px) {
+    .location {
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .locationTitle {
+        font-size: 24px;
+    }
+
+    .locationCollapse {
+        flex-flow: column;
+        padding-bottom: 20%;
+    }
+
+    .locationCollapse .collapseDescription {
+        padding: 20px 0px 15px 7px;
+    }
+
+    .locationInfo {
+        width: 92%;
+    }
+
+    .namePict {
+        display: flex;
+        width:auto;
+    }
+    
+    .hostName {
+        font-size: 15px;
+    }
+
+    .namePict {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
     .location {
         width: 90%;
         display: inline;
@@ -103,14 +140,8 @@ ul {
         padding: 0;
     }
 
-    .collapseRoll .collapseArrow {
-        width: 14px;
-        height: 11px;
-    }
-
     .locationTitle {
         font-size: 18px;
-        margin-top: 15px;
     }
 
     .locationLocalisation {
@@ -125,7 +156,7 @@ ul {
         font-size: 10px;
     }
 
-    .containerRating .star {
+    .containerRating {
         width: 15px;
         height: 15px;
     } 
@@ -143,105 +174,8 @@ ul {
         height: 32px;
         margin: auto;
     }
-}
 
-@media all and (min-width: 376px) and (max-width: 767px) {
-    .location {
-        width: 90%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
+    .indexPictures {
+        font-size: 15px;
     }
-
-    .locationTitle {
-        font-size: 18px;
-        margin-top: 15px;
-    }
-
-    .locationInfo {
-        width: 90%;
-    }
-
-    .locationLocalisation {
-        font-size: 16px;
-    }
-
-    .containerHost {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 80%;
-        margin-top: 25px;
-    }
-
-    .hostName {
-        font-size: 12px;
-    }
-
-    .tag {
-        font-size: 10px;
-    }
-
-    .containerRating .star {
-        width: 17px;
-        height: 17px;
-    }
-    
-    .profil {
-        width: 35px;
-        height: 35px;
-        margin: auto;
-    }
-
-    .locationCollapse {
-        flex-flow: column;
-        padding-bottom: 20%;
-    }
-
-    .locationCollapse .collapseRoll {
-        width: 347px;
-    }
-
-    .locationCollapse .collapseDescription {
-        width: 347px;
-    }
-
-    .locationCollapse .collapseDescription {
-        padding: 25px 0px 15px 12px;
-    }
-}
-
-@media all and (min-width: 768px) and (max-width: 1499px) {
-    .location {
-        width: 80%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .locationTitle {
-        font-size: 28px;
-    }
-
-    .locationCollapse {
-        flex-flow: column;
-        padding-bottom: 20%;
-    }
-
-    .locationCollapse .collapseDescription {
-        padding: 25px 9px 15px 12px;
-    }
-
-    .locationInfo {
-        width: 78%;
-    }
-
-    .star {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media all and (min-width: 1500px) {
-
 }

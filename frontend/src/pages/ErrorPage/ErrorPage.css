@@ -25,53 +25,19 @@
     color:#FF6060;
 }
 
-@media all and (max-width: 375px) {
-    .errorContainer {
-        padding-bottom: 37%;
-    }
-
-    .errorTitle {
-        font-size: 96px;
-        padding: 30%;
-    }
-
-    .errorParagraph {
-        font-size: 18px;
-        text-align: center;
-        padding: 1% 10% 20% 10%;
-        margin-top: 4%;
-    }
-
-    .errorLink{
-        font-size: 14px;
-        text-align: center;
+@media only screen and (max-width: 1200px) {
+	.errorTitle {
+        font-size: 288px;
     }
 }
 
-@media all and (min-width: 376px) and (max-width: 767px) {
-    .errorContainer {
-        padding-bottom: 37%;
-    }
-
-    .errorTitle {
-        font-size: 120px;
-        padding: 20%;
-    }
-
-    .errorParagraph {
-        font-size: 20px;
-        padding: 1% 10% 20% 10%;
-    }
-}
-
-@media all and (min-width: 768px) and (max-width: 1499px) {
+@media only screen and (max-width: 960px) {
     .errorContainer {
         padding-bottom: 37%;
     }
 
     .errorTitle {
         font-size: 200px;
-        padding: 10%;
     }
     
     .errorParagraph {
@@ -80,8 +46,25 @@
     }
 }
 
-@media all and (min-width: 1500px) {
-	.errorTitle {
-        font-size: 288px;
+@media only screen and (max-width: 512px) {
+    .errorContainer {
+        padding-bottom: 37%;
+    }
+
+    .errorTitle {
+        font-size: 96px;
+        padding-top: 30%;
+    }
+
+    .errorParagraph {
+        font-size: 18px;
+        text-align: center;
+        padding: 1% 10% 20% 10%;
+        margin-top: -4%;
+    }
+
+    .errorLink{
+        font-size: 14px;
+        text-align: center;
     }
 }

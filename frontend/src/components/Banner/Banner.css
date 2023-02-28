@@ -35,53 +35,39 @@
     margin: 0;
 }
 
-@media all and (max-width: 375px) {
-    .bannerImg {
+@media only screen and (max-width: 1200px) {
+	.containerBanner {
+        max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.bannerImg {
+        width: 95%;
+    }
+
+    .bannerFilter {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+	.bannerImg {
         width: 90%;
-        margin: auto;
         border-radius: 10px;
+        margin: auto;
     }
 
     .bannerFilter {
         width: 90%;
-        margin: auto;
         border-radius: 10px;
+        margin: auto;
     }
 
     .bannerTxt {
-        width: 70%;
+        width: 58%;
         font-size: 24px;
         text-align: left;
         padding-right: 40px;
     }
-}
-
-@media all and (min-width: 376px) and (max-width: 767px) {
-	.bannerImg {
-        width: 95%;
-    }
-
-    .bannerFilter {
-        width: 95%;
-    }
-
-    .bannerTxt {
-        font-size: 30px;
-    }
-}
-
-@media all and (min-width: 768px) and (max-width: 1499px) {
-	.bannerImg {
-        width: 95%;
-    }
-
-    .bannerFilter {
-        width: 95%;
-    }
-}
-
-@media all and (min-width: 1500px) {
-	.containerBanner {
-        max-width: 100%;
-	}
 }

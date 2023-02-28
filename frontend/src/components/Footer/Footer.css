@@ -21,29 +21,17 @@
     font-size: 24px;
 }
 
-@media all and (max-width: 375px) {
+@media only screen and (max-width: 1200px) {
     .containerFooter {
-        padding: 12%;
+        padding: 2%;
     }
 
     .allRights {
-        font-size: 12px;
-        padding-top: 2%;
+        font-size: 24px;
     }
 }
 
-@media all and (min-width: 376px) and (max-width: 767px) {
-    .containerFooter {
-        padding: 10%;
-    }
-
-    .allRights {
-        font-size: 12px;
-        padding-top: 2%;
-    }
-}
-
-@media all and (min-width: 768px) and (max-width: 1499px) {
+@media only screen and (max-width: 960px) {
     .containerFooter {
         padding: 5%;
     }
@@ -54,12 +42,12 @@
     }
 }
 
-@media all and (min-width: 1500px) {
+@media only screen and (max-width: 512px) {
     .containerFooter {
-        padding: 2%;
+        padding: 15%;
     }
 
     .allRights {
-        font-size: 24px;
+        font-size: 12px;
     }
 }

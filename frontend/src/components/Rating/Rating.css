@@ -2,3 +2,10 @@
     width: 30px;
     height: 30px;
 }
+
+@media only screen and (max-width: 960px) {
+    .star {
+        width: 15px;
+        height: 15px;
+    }
+}

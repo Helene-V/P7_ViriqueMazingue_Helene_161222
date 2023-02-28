@@ -20,7 +20,7 @@ function Home() {
             <main>
                 <div className='containerHome'>{Locations.map((location) => {
                     return (             
-                        <Link key={location.id} to={`/location/${location.id}`}>
+                        <Link className='containerCard' key={location.id} to={`/location/${location.id}`}>
                             <Card key={location.id} cover={location.cover} title={location.title} />
                         </Link>
                     )
