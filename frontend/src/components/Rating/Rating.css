@@ -5,6 +5,13 @@
 
 @media only screen and (max-width: 960px) {
     .star {
+        width: 20px;
+        height: 20;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .star {
         width: 15px;
         height: 15px;
     }
